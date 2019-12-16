@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/static/style_sheets/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="color: whitesmoke" href="/home">HOME</a>
+            </div>
+            <ul class="nav navbar-nav">
+            <li><a style="color: white" href="/resume">Resume</a></li>
+            <li><a style="color: white" href="/one_slider">One Slider</a></li>
+            <li><a style="color: white" href="/">Poster</a></li>
+            <li><a style="color: white" href="/poster">Hi Page</a></li>
+            </ul>
+    </div>
+</nav>
+
+<div class="header">
+    <img src="/static/me.jpeg" alt="me" width="260" height="290" padding-right= "100px">
+    <div class="header_text">
+        <p style="font-size:30px">Hello, my name is Parag Das</p>
+        <p style="font-size:20px">Experienced Engineer with a demonstrated history of working in the information technology and services industry. Strong engineering professional with a Bachelor of Engineering - BE focused in Computer Science with Big Data.</p>
+    </div>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div class="fakeimg" style="height:60px;color: white;">Personal Info</div>
+    <h4>Address</h4>
+    <p>Hardy Tower, Ramanujan IT City 5th & 6th floor, SH 49A, Chennai, Tamil Nadu 600113.</p>
+    <h4>Phone</h4>
+    <p>7749874095</p>
+    <h4>E-mail</h4>
+    <p>dasparag70@gmail.com</p>
+    <h4>Linkedin</h4>
+    <p>www.linkedin.com/in/parag-das</p><br>
+    <div class="fakeimg" style="height:60px; color: white;">Languages</div><br>
+    <ul>
+      <li>Python</li>
+      <li>Apache Airflow</li>
+      <li>Django</li>
+      <li>Mongodb</li>
+      <li>SQL</li>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+    
+  </div>
+
+  <div class="main">
+    <h4>Self-motivated and hardworking fresher seeking for an opportunity to work in a challenging environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization.</h4>
+    <h3>EXPERIENCE SUMMARY</h3>
+    <ul>
+      <li>3 months of  job training  in the field of Emerging Technologies as AI-ML, RPA, IOT, Block-Chain as well as Python developer at Mindtree Kalinga(January 2019 – April 2019).</li>
+      <li>Worked on an Internal Project (Automaon). I was working on Apache Airflow which is open-source workflow management platform (base technology: Python).</li>
+      <li>Worked with Mongodb and sql (in python).</li>
+    </ul>
+    <h3>EXPERIENCE DETAILS</h3>
+    <ul>
+      <li>Functional Domain Name</li>
+      <p>Back-End development for Automaton</p>
+      <li>Technology</li>
+      <p>Apache Airflow (Python)</p>
+      <li>Description</li>
+      <p>Crated a workflow scheduling scripts and sensors for mongodb and sql data sensing.</p>      
+    </ul>
+    <h3>SKILLS</h3>
+    <ul>
+        <li>Technology:	          Apache Airflow, Django</li>
+        <li>Primary Skill(s):     Airflow Develope, Django Developer</li>
+        <li>Technical Skills:     Python, Django, Mongo dB, MySQL, HTML, ML</li>
+        <li>Industry Domain:      Developer</li>
+    </ul>
+  </div>
+  
+</div>
+
+<div class="footer">
+    <h3 style="color:white;">Interested in hiring me for your project?</h3>
+    <p style="color:white;">To start an initial chat, just drop me an email at dasparag70@gmail.com or use the links given below.</p>
+    <a href=""><img src="/static/facebook.png" alt="facebook" width="30" height="30"></a>
+    <a href="{% url 'linkedin' %}"><img src="/static/linkedin.png" alt="linkedin" width="30" height="30"></a>
+</div>
+
+</body>
+</html>

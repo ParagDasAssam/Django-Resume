@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <link rel="stylesheet" href="/static/style_sheets/style2.css">
+    </head>
+    <body>
+        <!-- <div>
+            <img src="/static/me.jpeg" alt="me" width="260" height="250" padding= "0px">
+        </div> -->
+        <h3 class="fixed" style="font-size:50px" >Howdy..!</h3>
+        <div class="word"  style = "padding-left: 0px;">
+            <a href="/home"><span>R</span></a>
+            <a href="/home"><span>E</span></a>
+            <a href="/home"><span>S</span></a>
+            <a href="/home"><span>U</span></a>
+            <a href="/home"><span>M</span></a>
+            <a href="/home"><span>E</span></a>
+        </div>
+        <script>
+        let spans = document.querySelectorAll('.word span');
+spans.forEach((span, idx) => {
+	span.addEventListener('click', (e) => {
+		e.target.classList.add('active');
+	});
+	span.addEventListener('animationend', (e) => {
+		e.target.classList.remove('active');
+	});
+	
+	// Initial animation
+	setTimeout(() => {
+		span.classList.add('active');
+	}, 750 * (idx+1))
+});
+</script>
+    </body>
+</html>
