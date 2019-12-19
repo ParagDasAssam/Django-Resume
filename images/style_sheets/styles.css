@@ -61,10 +61,12 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 5px;
+  height: 200px;
   text-align: center;
   background: #5DA5E8;
 }
+
 /* Large rounded green border */
 hr.new5 {
   border: 8px solid#5DA5E8;
@@ -89,4 +91,28 @@ hr.new5 {
   background-color: #4CAF50;
   color: white;
 }
+
+.button{
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #80ff80;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 4px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
 

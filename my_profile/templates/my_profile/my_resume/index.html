@@ -1,29 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="/static/style_sheets/styles.css">
+<title>Welcome</title>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" style="color: whitesmoke" href="/home">HOME</a>
-            </div>
-            <ul class="nav navbar-nav">
-            <li><a style="color: white" href="/resume">Resume</a></li>
-            <li><a style="color: white" href="/one_slider">One Slider</a></li>
-            <li><a style="color: white" href="/">Poster</a></li>
-            <li><a style="color: white" href="/poster">Hi Page</a></li>
-            </ul>
-    </div>
-</nav>
-
+  {% include "temp.html" %}
 <div class="header">
     <img src="/static/me.jpeg" alt="me" width="260" height="290" padding-right= "100px">
     <div class="header_text">
@@ -87,6 +68,7 @@
 <div class="footer">
     <h3 style="color:white;">Interested in hiring me for your project?</h3>
     <p style="color:white;">To start an initial chat, just drop me an email at dasparag70@gmail.com or use the links given below.</p>
+    <a href="/contact"><button class="button">Contact</button><br><br></a>
     <a href=""><img src="/static/facebook.png" alt="facebook" width="30" height="30"></a>
     <a href="{% url 'linkedin' %}"><img src="/static/linkedin.png" alt="linkedin" width="30" height="30"></a>
 </div>
