@@ -7,7 +7,7 @@ urlpatterns = [
     path('linkedin/',views.linkedin,name = 'linkedin'),
     path('resume/',views.resume,name='resume'),
     path('one_slider/',views.one_slider,name='slider'),
-    path('poster/',views.poster,name='poster'),
+    #path('poster/',views.poster,name='poster'),
     path('contact/',views.contact,name='contact'),
     path('',views.animation,name='animation'),
 ]

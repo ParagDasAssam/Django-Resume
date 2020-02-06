@@ -15,7 +15,7 @@ def resume(request):
     return render(request,'my_profile/my_resume/resume.html',{})
 def one_slider(request):
     return render(request,'my_profile/my_resume/one_slider.html',{})
-def poster(request):
-    return render(request,'my_profile/my_resume/poster.html',{})
+# def poster(request):
+#     return render(request,'my_profile/my_resume/poster.html',{})
 def contact(request):
     return render(request,'my_profile/my_resume/contact.html',{})
